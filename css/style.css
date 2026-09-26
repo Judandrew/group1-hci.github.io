@@ -1,0 +1,84 @@
+/* Warehouse IOMS - Dark Theme Styles */
+
+body {
+  background: #0a0e17;
+}
+
+.sidebar-link.active {
+  background-color: #2563eb;
+  color: white;
+}
+
+.sidebar-link:hover:not(.active) {
+  background-color: #1e293b;
+}
+
+.fade-in {
+  animation: fadeIn 0.25s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.status-badge {
+  padding: 0.125rem 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.toast {
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.table-row:hover {
+  background-color: #1e293b;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.35);
+  border-color: #3b82f6;
+}
+
+.required::after {
+  content: " *";
+  color: #ef4444;
+}
+
+/* Dark form controls */
+input,
+select,
+textarea {
+  background-color: #0f172a !important;
+  border-color: #334155 !important;
+  color: #e2e8f0 !important;
+}
+
+input::placeholder {
+  color: #64748b !important;
+}
+
+select option {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+/* Profile panel */
+.profile-panel {
+  animation: slideUp 0.2s ease;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
